@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/capybara.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/ind.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <title>Shop</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-wrapper">
+                    <div class="nav-left">
+                        <a class="nav-brand" href="#">ShapiCraft</a>
+                    </div>
+                    <button class="header__burger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="nav-center">
+                        <ul class="navbar-menu">
+                            <li class="nav-li">
+                                <a href="#">
+                                    <i class="fa-regular fa-file"></i>
+                                    Правила
+                                </a>
+                            </li>
+                            <li class="nav-li">
+                                <a href="#">
+                                    <i class="fa-sharp fa-regular fa-comment"></i>
+                                    Как начать играть?
+                                </a>
+                            </li>
+                            <li class="nav-li">
+                                <a href="#">
+                                    <i class="fa-brands fa-vk"></i>
+                                    <span>Наш ВК</span>
+                                </a>
+                            </li>
+                            <li class="nav-li">
+                                <a href="#">
+                                    <i class="fa-brands fa-telegram"></i>
+                                    <span>Наш ТГ</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-right">
+                        <a href="#" class="login-btn" id="open_pop_up">
+                            <span>
+                                <i class="fa-regular fa-user"></i>
+                                Личный кабинет
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="pop_up" id="pop_up">
+        <div class="pop_up_container">
+            <div class="pop_up_body" id="pop_up_body">
+                <h3 class="pop_up__title">Вход</h3>
+                <form action="">
+                    <input type="text" placeholder="Введите почту">
+                    <input type="text" placeholder="Введите пароль">
+                    <button>Войти</button>
+                    <a href="#" class="form_link">Забыли пароль?</a>
+                    <p>Нет учетной записи ShapiCraft?</p>
+                    <a href="#" id="open_pop_up_reg">Зарегистрироваться</a>
+                </form>
+                <div class="pop_up_close" id="pop_up_close">&#10006</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pop_up_reg" id="pop_up_reg">
+        <div class="pop_up_container">
+            <div class="pop_up_body">
+                <h3 class="pop_up__title">Регистрация</h3>
+                <form action="">
+                    <input type="text" placeholder="Введите почту">
+                    <input type="text" placeholder="Придумайте пароль">
+                    <input type="text" placeholder="Подтвердите пароль">
+                    <button>Зарегистрироваться</button>
+                    <p>Есть учетная запись в ShapiCraft?</p>
+                    <a href="#" id="open_pop_up_unreg">Войти</a>
+                </form>
+                <div class="pop_up_close" id="pop_up_close_reg">&#10006</div>
+            </div>
+        </div>
+    </div>
+    <main class="main">
+
+
+        <nav class="navbar-page">
+            <div class="container">
+                <ul class="navbar-list">
+                    <li class="tab-item is-active"><a class="page-link" href="#">Привилегии</a></li>
+                    <li class="tab-item"><a class="page-link" href="#">Кейсы</a></li>
+                    <li class="tab-item"><a class="page-link" href="#">Рубли</a></li>
+                    <li class="tab-item"><a class="page-link" href="#">Спавнеры</a></li>
+                    <li class="tab-item"><a class="page-link" href="#">Услуги</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content-item is-active">
+            <div class="grid-container">
+                <div class="card">
+                    <h4 class="title">Vip</h4>
+                    <img src="images/grass.png" alt="minecraft img">
+                    <p class="price">7 руб.</p>
+                </div>
+                <div class="card">
+                    <h4 class="title">Premium</h4>
+                    <img src="images/grass.png" alt="minecraft img">
+                    <p class="price">19 руб.</p>
+                </div>
+                <div class="card">
+                    <h4 class="title">Master</h4>
+                    <img src="images/grass.png" alt="minecraft img">
+                    <p class="price">49 руб.</p>
+                </div>
+                <div class="card">
+                    <h4 class="title">Hero</h4>
+                    <img src="images/grass.png" alt="minecraft img">
+                    <p class="price">59 руб.</p>
+                </div>
+                <div class="card">
+                    <h4 class="title">Lord</h4>
+                    <img src="images/grass.png" alt="minecraft img">
+                    <p class="price">89 руб.</p>
+                </div>
+                <div class="card">
+                    <h4 class="title">Clown</h4>
+                    <img src="images/grass.png" alt="minecraft img">
+                    <p class="price">129 руб.</p>
+                </div>
+                <div class="card">
+                    <h4 class="title">ShapiLord</h4>
+                    <img src="images/grass.png" alt="minecraft img">
+                    <p class="price">199 руб.</p>
+                </div>
+                <div class="card">
+                    <h4 class="title">Shapito</h4>
+                    <img src="images/grass.png" alt="minecraft img">
+                    <p class="price">399 руб.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-item">
+            <div class="grid-container">
+                <div class="card">
+                    <h4 class="title">С валютой</h4>
+                    <img src="images/grass.png" alt="minecraft img">
+                    <p class="price">15 руб.</p>
+                </div>
+                <div class="card">
+                    <h4 class="title">С вещами</h4>
+                    <img src="images/grass.png" alt="minecraft img">
+                    <p class="price">45 руб.</p>
+                </div>
+                <div class="card">
+                    <h4 class="title">Со спавнерами</h4>
+                    <img src="images/grass.png" alt="minecraft img">
+                    <p class="price">299 руб.</p>
+                </div>
+                <div class="card">
+                    <h4 class="title">С чем-то</h4>
+                    <img src="images/grass.png" alt="minecraft img">
+                    <p class="price">59 руб.</p>
+                </div>
+                <div class="card">
+                    <h4 class="title">ХЗ</h4>
+                    <img src="images/grass.png" alt="minecraft img">
+                    <p class="price">89 руб.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-item">
+            <div class="grid-container">
+                <div class="card">
+                    <h4 class="title">15 рубелй</h4>
+                    <img src="images/moneta.png" width="120px" height="120px" alt="minecraft img">
+                    <p class="price">15 руб.</p>
+                </div>
+                <div class="card">
+                    <h4 class="title">45 рублей</h4>
+                    <img src="images/moneta.png" width="120px" height="120px" alt="minecraft img">
+                    <p class="price">45 руб.</p>
+                </div>
+                <div class="card">
+                    <h4 class="title">99 рублей</h4>
+                    <img src="images/moneta.png" width="120px" height="120px" alt="minecraft img">
+                    <p class="price">99 руб.</p>
+                </div>
+                <div class="card">
+                    <h4 class="title">199 рублей</h4>
+                    <img src="images/moneta.png" width="120px" height="120px" alt="minecraft img">
+                    <p class="price">199 руб.</p>
+                </div>
+                <div class="card">
+                    <h4 class="title">599 рублей</h4>
+                    <img src="images/moneta.png" width="120px" height="120px" alt="minecraft img">
+                    <p class="price">529 руб.</p>
+                </div>
+                <div class="card">
+                    <h4 class="title">1029 рублей</h4>
+                    <img src="images/moneta.png" width="120px" height="120px" alt="minecraft img">
+                    <p class="price">959 руб.</p>
+                </div>
+                <div class="card">
+                    <h4 class="title">2350 рублей</h4>
+                    <img src="images/moneta.png" width="120px" height="120px" alt="minecraft img">
+                    <p class="price">2000 руб.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="block-left">
+                <a href="#" class="logo">ShapiCraft</a>
+            </div>
+            <div class="block-center-right">
+                <ul class="social-links">
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-message"></i>
+                            Пользовательское соглашение
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-message"></i>
+                            Политика конфиденциальносоти
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="">
+                <p class="footer_text">
+                    ShapiCraft все права защищены. ShapiCraft не связан
+                    <br>
+                    с MojangAB, все средства идут на развитие проекта.
+                </p>
+            </div>
+            <div>
+                <span class="dev" data-tippy-duration="0.3s" data-tippy-content="LolSite - Разработка сайта">
+                    LolSite.org
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <script src="script_ind.js"></script>
+</body>
+
+</html>

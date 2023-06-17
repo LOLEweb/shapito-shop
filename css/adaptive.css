@@ -1,0 +1,41 @@
+/* @media screen and (max-width: 1099px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+        grid-gap: 20px;
+    }
+} */
+
+@media screen and (max-width: 1250px) {
+    .grid-container {
+        max-width: 1100px;
+    }
+
+    .nav-li span {
+        display: none;
+    }
+
+    .navbar-wrapper {
+        justify-content: space-around;
+    }
+
+    .container {
+        max-width: 994px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .grid-container {
+        max-width: 900px;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))
+    }
+}
+
+@media screen and (max-width: 991px) {}
+
+@media screen and (max-width: 900px) {
+    .navbar-list {
+        margin: 0 105px;
+    }
+
+    /* Добавить бургер-меню */
+}

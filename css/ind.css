@@ -1,0 +1,399 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Acrom', sans-serif;
+}
+
+i {
+    margin-right: 4px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.navbar {
+    margin: 50px 0 0 0;
+}
+
+.navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-li {
+    list-style: none;
+    margin-right: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_link {
+    margin: 15px 0 0 0;
+}
+
+form p {
+    margin: 15px 0;
+    font: 500 16px "Montserrat", sans-serif;
+    color: #89909F;
+}
+
+form a {
+    color: #5a5a5a;
+}
+
+.nav-li:last-child {
+    margin: 0;
+}
+
+.login-btn {
+    background-color: #000000;
+    padding: 20px 50px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.login-btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.5em;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateX(-3em) skewX(-45deg);
+    transition: .5s;
+}
+
+.login-btn:hover:before {
+    animation: move-light .6s;
+}
+
+@keyframes move-light {
+    from {
+        transform: translateX(-4em) skewX(-45deg);
+    }
+
+    to {
+        transform: translateX(18em) skewX(-45deg);
+    }
+
+}
+
+.login-btn>span {
+    color: white;
+}
+
+/* Pop up */
+
+.pop_up {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s linear;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0, .5);
+    z-index: 2;
+}
+
+.pop_up_reg {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s linear;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0, .5);
+    z-index: 2;
+}
+
+.pop_up_reg.active_reg {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pop_up.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pop_up_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.pop_up_body {
+    margin: auto;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 15px 70px 15px;
+    position: relative;
+}
+
+.pop_up_body input {
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 330px;
+    padding: 17px 20px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    border: none;
+    font: 500 20px "Montserrat", sans-serif;
+    color: #89909F;
+}
+
+.pop_up_body input:focus {
+    outline: none;
+}
+
+.pop_up_body button {
+    cursor: pointer;
+    width: 330px;
+    margin: 60px auto 0px auto;
+    padding: 20px 0px;
+    font: 500 20px "Montserrat", sans-serif;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background-color: orangered;
+    transition: all .3s;
+}
+
+.pop_up_body button:hover {
+    opacity: 0.7;
+}
+
+.pop_up__title {
+    font: 800 22px "Montserrat", sans-serif;
+}
+
+.pop_up_close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 35px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.pop_up_close:hover {
+    transform: rotate(90deg);
+}
+
+
+/* /Pop up */
+
+.nav-li a:after {
+    background-color: #000000;
+    /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px;
+    /* Высота линии */
+    width: 0%;
+    transform: translateY(3px);
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.nav-li a:hover::after {
+    width: 100%;
+}
+
+.nav-li>a,
+.nav-right>a {
+    text-decoration: none;
+    color: black;
+    font: 700 15px "Montserrat", sans-serif;
+}
+
+.nav-brand {
+    text-decoration: none;
+    color: orangered;
+    /* text-shadow: 0 0 7px orangered; */
+    font: 700 24px "Montserrat", sans-serif;
+}
+
+.nav-brand:after {
+    background-color: orangered;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    transform: translateY(3px);
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.nav-brand:hover::after {
+    width: 100%;
+}
+
+.header__burger-btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-color: aqua;
+}
+
+.header__burger-btn span {}
+
+
+/*  */
+
+.card img {
+    margin: 25px 0;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 26px;
+}
+
+.card {
+    cursor: pointer;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    text-align: center;
+    padding: 25px;
+    background-color: rgb(227, 231, 238);
+}
+
+.card:hover {
+    scale: 1.1;
+    background-color: rgb(255, 115, 0, 0.7);
+}
+
+.title,
+.price {
+    font: 700 20px/24px "Roboto Mono", sans-serif;
+    text-transform: uppercase;
+}
+
+/*  */
+
+.navbar-list>li {
+    list-style-type: none;
+}
+
+.navbar-page {
+    margin: 50px 0;
+}
+
+.page-link {
+    font: 600 20px "Montserrat", sans-serif;
+    text-decoration: none;
+    color: #5a5a5a;
+    transition: all .3s;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.page-link:hover {
+    color: #000000;
+}
+
+.footer {
+    background-color: #18222e;
+    height: 215px;
+}
+
+.main {
+    min-height: calc(100vh - 80px);
+}
+
+.footer>.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-links>li {
+    margin-right: 45px;
+    list-style: none;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: gray;
+    font: 800 10pt "Montserrat", sans-serif;
+    opacity: .59;
+    transition: all .3s;
+}
+
+.social-links a:hover {
+    color: white;
+    opacity: 1;
+}
+
+.logo {
+    text-transform: uppercase;
+    font: 800 20pt "Montserrat", sans-serif;
+    text-decoration: none;
+    color: orangered;
+}
+
+.dev {
+    font: 800 13pt "Montserrat", sans-serif;
+    opacity: .39;
+    color: gray;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.footer_text {
+    color: gray;
+    font-size: 13pt;
+}
+
+.dev:hover {
+    color: white;
+    opacity: 1;
+}
+
+/* TAB */
+
+.content-item {
+    display: none;
+}
+
+.content-item.is-active {
+    display: block;
+}
